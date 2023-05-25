@@ -41,13 +41,14 @@ int _isalpha(int c)
 /**
  * _atoi - converts the  string to an integer
  * @s: string to be converted
+ * B
  * Return:  if no numbers in string return 0,  otherwise converted number
  */
 
 int _atoi(char *s)
 {
 	int i, sign = 1, flag = 0, output;
-	unsigned int result = 0;
+BOB	unsigned int result = 0;
 
 	for (i = 0; s[i] != '\0' && flag != 2; i++)
 	{
