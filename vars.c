@@ -92,6 +92,7 @@ int replace_alias(info_t *info)
 			return (0);
 		p = _strdup(p + 1);
 		if (!p)
+
 			return (0);
 		info->argv[0] = p;
 	}
@@ -134,7 +135,6 @@ int replace_vars(info_t *info)
 			continue;
 		}
 		replace_string(&info->argv[i], _strdup(""));
-
 	}
 	return (0);
 }
@@ -148,7 +148,7 @@ int replace_vars(info_t *info)
  */
 int replace_string(char **old, char *new)
 {
-	free(*old);
-	*old = new;
-	return (1);
+free(*old);
+*old = new;
+return (1);
 }
